@@ -1,0 +1,33 @@
+{
+    "parent": "blazingmagik:veteran_chernobylist",
+    "display": {
+        "icon": {
+            "item": "minecraft:gray_glazed_terracotta"
+        },
+        "title": "Spectacular View From Up Here",
+        "description": "Levitate 100 blocks vertically and 10 blocks horizontally without stopping",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {
+        "experience": 250
+    },
+    "criteria": {
+        "levitated": {
+            "trigger": "minecraft:levitation",
+            "conditions": {
+                "distance": {
+                    "y": {
+                        "min": 100.0
+                    },
+                    "horizontal": {
+                        "min": 10.0
+                    }
+                }
+            }
+        }
+    },
+    "requirements": []
+}

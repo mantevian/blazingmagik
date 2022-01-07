@@ -1,0 +1,10 @@
+{
+    "parent": "blazingmagik:been_here_yesterday",
+    "rewards": {},
+    "criteria": {
+        "impossible": {
+            "trigger": "tick"
+        }
+    },
+    "requirements": []
+}

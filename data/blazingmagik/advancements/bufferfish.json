@@ -1,0 +1,29 @@
+{
+    "parent": "blazingmagik:the_rumours_were_true",
+    "display": {
+        "icon": {
+            "item": "sponge"
+        },
+        "title": "Bufferfish",
+        "description": "Obtain an Elder Guardian spawn egg through a rare drop from a pufferfish",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:elder_guardian_spawn_egg"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": []
+}

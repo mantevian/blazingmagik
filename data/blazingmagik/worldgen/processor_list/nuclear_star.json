@@ -1,0 +1,30 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:protected_blocks",
+            "value": "minecraft:features_cannot_replace"
+        },
+        {
+            "rules": [
+                {
+                    "output_state": {
+                        "Name": "minecraft:glowstone"
+                    },
+                    "input_predicate": {
+                        "block": "minecraft:air",
+                        "probability": 0.002,
+                        "predicate_type": "minecraft:random_block_match"
+                    },
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    }
+                }
+            ],
+            "processor_type": "minecraft:rule"
+        },
+        {
+            "processor_type": "block_rot",
+            "integrity": 0.8
+        }
+    ]
+}

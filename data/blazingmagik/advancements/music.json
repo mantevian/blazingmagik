@@ -1,0 +1,21 @@
+{
+    "parent": "blazingmagik:root",
+    "display": {
+        "icon": {
+            "item": "note_block"
+        },
+        "title": "Inspiration",
+        "description": "This entire concept was inspired by a music album 'crystallized' by Camellia, make sure to check them out!",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {},
+    "criteria": {
+        "impossible": {
+            "trigger": "tick"
+        }
+    },
+    "requirements": []
+}

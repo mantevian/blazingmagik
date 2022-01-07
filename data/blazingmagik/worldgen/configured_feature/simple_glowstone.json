@@ -1,0 +1,11 @@
+{
+    "config": {
+        "to_place": {
+            "state": {
+                "Name": "minecraft:glowstone"
+            },
+            "type": "minecraft:simple_state_provider"
+        }
+    },
+    "type": "minecraft:simple_block"
+}

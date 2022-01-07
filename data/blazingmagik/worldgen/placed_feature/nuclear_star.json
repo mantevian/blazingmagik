@@ -1,0 +1,32 @@
+{
+    "feature": "blazingmagik:nuclear_star",
+    "placement": [
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "height": {
+                "min_inclusive": {
+                    "above_bottom": 8
+                },
+                "max_inclusive": {
+                    "above_bottom": 128
+                },
+                "type": "minecraft:uniform"
+            },
+            "type": "minecraft:height_range"
+        },
+        {
+            "type": "block_predicate_filter",
+            "predicate": {
+                "type": "matching_blocks",
+                "blocks": [
+                    "air"
+                ]
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

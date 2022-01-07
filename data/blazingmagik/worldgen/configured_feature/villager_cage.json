@@ -1,0 +1,22 @@
+{
+    "config": {
+        "fossil_processors": "blazingmagik:villager_cage",
+        "overlay_processors": "blazingmagik:villager_cage",
+        "max_empty_corners_allowed": 6,
+        "fossil_structures": [
+            "blazingmagik:villager_cage_1",
+            "blazingmagik:villager_cage_2",
+            "blazingmagik:villager_cage_3",
+            "blazingmagik:villager_cage_4",
+            "blazingmagik:villager_cage_5"
+        ],
+        "overlay_structures": [
+            "blazingmagik:empty",
+            "blazingmagik:empty",
+            "blazingmagik:empty",
+            "blazingmagik:empty",
+            "blazingmagik:empty"
+        ]
+    },
+    "type": "minecraft:fossil"
+}

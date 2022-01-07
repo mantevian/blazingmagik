@@ -1,0 +1,53 @@
+{
+    "config": {
+        "tries": 128,
+        "xz_spread": 3,
+        "y_spread": 3,
+        "feature": {
+            "feature": {
+                "type": "simple_block",
+                "config": {
+                    "to_place": {
+                        "type": "weighted_state_provider",
+                        "entries": [
+                            {
+                                "data": {
+                                    "Name": "gray_concrete_powder"
+                                },
+                                "weight": 1
+                            },
+                            {
+                                "data": {
+                                    "Name": "light_gray_concrete_powder"
+                                },
+                                "weight": 5
+                            }
+                        ]
+                    }
+                }
+            },
+            "placement": [
+                {
+                    "predicate": {
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "type": "solid"
+                            }
+                        ],
+                        "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                }
+            ]
+        }
+    },
+    "type": "minecraft:random_patch"
+}

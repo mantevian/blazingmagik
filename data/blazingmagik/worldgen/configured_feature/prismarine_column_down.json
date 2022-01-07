@@ -1,0 +1,112 @@
+{
+    "type": "block_column",
+    "config": {
+        "direction": "down",
+        "allowed_placement": {
+            "blocks": [
+                "minecraft:air",
+                "minecraft:water"
+            ],
+            "type": "minecraft:matching_blocks"
+        },
+        "layers": [
+            {
+                "height": {
+                    "type": "uniform",
+                    "value": {
+                        "min_inclusive": 1,
+                        "max_inclusive": 2
+                    }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "prismarine_bricks"
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "biased_to_bottom",
+                    "value": {
+                        "max_inclusive": 6,
+                        "min_inclusive": 2
+                    }
+                },
+                "provider": {
+                    "type": "weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "prismarine_wall",
+                                "Properties": {
+                                    "east": "none",
+                                    "north": "none",
+                                    "west": "none",
+                                    "south": "none",
+                                    "waterlogged": "false",
+                                    "up": "true"
+                                }
+                            },
+                            "weight": 3
+                        },
+                        {
+                            "data": {
+                                "Name": "prismarine_bricks"
+                            },
+                            "weight": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "height": {
+                    "type": "uniform",
+                    "value": {
+                        "max_inclusive": 2,
+                        "min_inclusive": 1
+                    }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "cyan_stained_glass"
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "sea_lantern"
+                            },
+                            "weight": 24
+                        },
+                        {
+                            "data": {
+                                "Name": "deepslate_diamond_ore"
+                            },
+                            "weight": 2
+                        },
+                        {
+                            "data": {
+                                "Name": "dark_prismarine"
+                            },
+                            "weight": 64
+                        },
+                        {
+                            "data": {
+                                "Name": "gold_block"
+                            },
+                            "weight": 1
+                        }
+                    ]
+                }
+            }
+        ],
+        "prioritize_tip": false
+    }
+}

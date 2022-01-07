@@ -1,0 +1,11 @@
+scoreboard objectives add mantevian.blazingmagik.amethyst_rainfields dummy
+scoreboard objectives add mantevian.blazingmagik.amorphous dummy
+scoreboard objectives add mantevian.blazingmagik.artificial_snow_land dummy
+scoreboard objectives add mantevian.blazingmagik.crystallized dummy
+scoreboard objectives add mantevian.blazingmagik.liquated dummy
+scoreboard objectives add mantevian.blazingmagik.nuclear_star dummy
+
+scoreboard objectives add mantevian.blazingmagik.levitation_timer dummy
+
+scoreboard objectives add mantevian.blazingmagik.nuclear_star_poison_cooldown dummy
+scoreboard objectives add mantevian.blazingmagik.seconds_been_to_nuclear_star dummy

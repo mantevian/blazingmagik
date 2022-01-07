@@ -1,0 +1,19 @@
+{
+    "feature": "blazingmagik:amethyst_column_patch",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 2
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "heightmap": "OCEAN_FLOOR_WG",
+            "type": "minecraft:heightmap"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "parent": "blazingmagik:root",
+    "display": {
+        "icon": {
+            "item": "feather"
+        },
+        "title": "Genie",
+        "description": "The real soul fire doesn't need any blocks supporting it",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {},
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": []
+}

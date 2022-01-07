@@ -1,0 +1,68 @@
+{
+    "parent": "blazingmagik:spectacular_view_from_up_here",
+    "display": {
+        "icon": {
+            "item": "ender_eye"
+        },
+        "title": "been here yesterday",
+        "description": "this is just the beginning of your journey",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {
+        "experience": 200
+    },
+    "criteria": {
+        "amethyst_rainfields": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:amethyst_rainfields"
+                }
+            }
+        },
+        "amorphous": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:amorphous"
+                }
+            }
+        },
+        "artificial_snow_land": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:artificial_snow_land"
+                }
+            }
+        },
+        "crystallized": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:crystallized"
+                }
+            }
+        },
+        "liquated": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:liquated"
+                }
+            }
+        },
+        "nuclear_star": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:nuclear_star"
+                }
+            }
+        }
+    },
+    "requirements": []
+}

@@ -1,0 +1,28 @@
+{
+    "config": {
+        "contents": {
+            "Properties": {
+                "level": "0"
+            },
+            "Name": "minecraft:water"
+        },
+        "rim": {
+            "Name": "minecraft:coarse_dirt"
+        },
+        "size": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 3,
+                "max_inclusive": 9
+            }
+        },
+        "rim_size": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 0,
+                "max_inclusive": 4
+            }
+        }
+    },
+    "type": "minecraft:delta_feature"
+}

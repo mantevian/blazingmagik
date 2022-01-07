@@ -1,0 +1,51 @@
+{
+    "feature": "blazingmagik:amethyst_raindrop",
+    "placement": [
+        {
+            "type": "noise_based_count",
+            "noise_factor": 20,
+            "noise_to_count_ratio": 1000,
+            "noise_offset": 0.8
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "height": {
+                "min_inclusive": {
+                    "above_bottom": 64
+                },
+                "max_inclusive": {
+                    "below_top": 0
+                },
+                "type": "minecraft:uniform"
+            },
+            "type": "minecraft:height_range"
+        },
+        {
+            "direction_of_search": "up",
+            "target_condition": {
+                "blocks": [
+                    "acacia_leaves"
+                ],
+                "type": "minecraft:matching_blocks"
+            },
+            "allowed_search_condition": {
+                "blocks": [
+                    "minecraft:air"
+                ],
+                "type": "minecraft:matching_blocks"
+            },
+            "max_steps": 32,
+            "type": "minecraft:environment_scan"
+        },
+        {
+            "xz_spread": 0,
+            "y_spread": -1,
+            "type": "minecraft:random_offset"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

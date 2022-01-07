@@ -1,0 +1,30 @@
+{
+    "feature": {
+        "type": "replace_single_block",
+        "config": {
+            "targets": [
+                {
+                    "target": {
+                        "predicate_type": "block_match",
+                        "block": "deepslate_bricks"
+                    },
+                    "state": {
+                        "Name": "cracked_deepslate_bricks"
+                    }
+                }
+            ]
+        }
+    },
+    "placement": [
+        {
+            "type": "count_on_every_layer",
+            "count": 256
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

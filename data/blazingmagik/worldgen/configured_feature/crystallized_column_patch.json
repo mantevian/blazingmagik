@@ -1,0 +1,131 @@
+{
+    "config": {
+        "tries": 16,
+        "xz_spread": 3,
+        "y_spread": 3,
+        "feature": {
+            "feature": {
+                "type": "block_column",
+                "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                        "blocks": [
+                            "minecraft:air"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    "layers": [
+                        {
+                            "height": {
+                                "type": "biased_to_bottom",
+                                "value": {
+                                    "max_inclusive": 3,
+                                    "min_inclusive": 1
+                                }
+                            },
+                            "provider": {
+                                "type": "weighted_state_provider",
+                                "entries": [
+                                    {
+                                        "data": {
+                                            "Name": "green_concrete"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "green_stained_glass"
+                                        },
+                                        "weight": 20
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "lime_concrete"
+                                        },
+                                        "weight": 1
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "height": {
+                                "type": "biased_to_bottom",
+                                "value": {
+                                    "max_inclusive": 6,
+                                    "min_inclusive": 1
+                                }
+                            },
+                            "provider": {
+                                "type": "weighted_state_provider",
+                                "entries": [
+                                    {
+                                        "data": {
+                                            "Name": "lime_concrete"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "lime_stained_glass"
+                                        },
+                                        "weight": 20
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "green_concrete"
+                                        },
+                                        "weight": 1
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "height": 1,
+                            "provider": {
+                                "type": "weighted_state_provider",
+                                "entries": [
+                                    {
+                                        "data": {
+                                            "Name": "lime_stained_glass"
+                                        },
+                                        "weight": 400
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "lime_concrete"
+                                        },
+                                        "weight": 400
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "emerald_block"
+                                        },
+                                        "weight": 1
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "prioritize_tip": false
+                }
+            },
+            "placement": [
+                {
+                    "direction_of_search": "down",
+                    "target_condition": {
+                        "type": "minecraft:solid"
+                    },
+                    "allowed_search_condition": {
+                        "blocks": [
+                            "minecraft:air"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    "max_steps": 32,
+                    "type": "minecraft:environment_scan"
+                }
+            ]
+        }
+    },
+    "type": "minecraft:random_patch"
+}

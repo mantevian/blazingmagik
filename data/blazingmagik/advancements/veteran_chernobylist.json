@@ -1,0 +1,23 @@
+{
+    "parent": "blazingmagik:bufferfish",
+    "display": {
+        "icon": {
+            "item": "fire_charge"
+        },
+        "title": "Veteran Chernobylist",
+        "description": "Spend 30 minutes in NUCLEAR-STAR",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "rewards": {
+        "experience": 500
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": []
+}

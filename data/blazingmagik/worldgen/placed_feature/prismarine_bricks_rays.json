@@ -1,0 +1,839 @@
+{
+    "feature": {
+        "config": {
+            "to_place": {
+                "type": "weighted_state_provider",
+                "entries": [
+                    {
+                        "data": {
+                            "Name": "minecraft:prismarine_bricks"
+                        },
+                        "weight": 5
+                    },
+                    {
+                        "data": {
+                            "Name": "minecraft:dark_prismarine"
+                        },
+                        "weight": 2
+                    }
+                ]
+            }
+        },
+        "type": "minecraft:simple_block"
+    },
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 220
+        },
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 12
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "blocks": [
+                            "minecraft:air"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "type": "any_of",
+                        "predicates": [
+                            {
+                                "type": "all_of",
+                                "predicates": [
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:prismarine_bricks"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "all_of",
+                                "predicates": [
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:prismarine_bricks"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    
+                                    {
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "all_of",
+                                "predicates": [
+                                    {
+                                        "offset": [
+                                            0,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:prismarine_bricks"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "all_of",
+                                "predicates": [
+                                    {
+                                        "offset": [
+                                            0,
+                                            0,
+                                            1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:prismarine_bricks"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            -1,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            0,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            -1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            0,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    },
+                                    {
+                                        "offset": [
+                                            1,
+                                            1,
+                                            -1
+                                        ],
+                                        "blocks": [
+                                            "minecraft:air"
+                                        ],
+                                        "type": "minecraft:matching_blocks"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "type": "minecraft:block_predicate_filter"
+        },
+        {
+            "height": {
+                "min_inclusive": {
+                    "above_bottom": 12
+                },
+                "max_inclusive": {
+                    "above_bottom": 96
+                },
+                "type": "minecraft:uniform"
+            },
+            "type": "minecraft:height_range"
+        }
+    ]
+}

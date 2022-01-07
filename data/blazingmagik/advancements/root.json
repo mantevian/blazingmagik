@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "blaze_powder"
+        },
+        "background": "minecraft:textures/block/deepslate_tiles.png",
+        "title": "blazingmagik",
+        "description": "Welcome to the blazingmagik dimension! You are to discover 6 biomes, each with unique properties. This advancement menu is a small guide on them.",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {},
+    "criteria": {
+        "impossible": {
+            "trigger": "tick"
+        }
+    },
+    "requirements": []
+}

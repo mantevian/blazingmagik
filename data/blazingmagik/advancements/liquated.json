@@ -1,0 +1,28 @@
+{
+    "parent": "blazingmagik:crystallized",
+    "display": {
+        "icon": {
+            "item": "kelp"
+        },
+        "title": "liquated",
+        "description": "If you want to find yourself in a peaceful place, float your boat into liquated and chill with the fish.",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {
+        "function": "blazingmagik:liquated"
+    },
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:liquated"
+                }
+            }
+        }
+    },
+    "requirements": []
+}

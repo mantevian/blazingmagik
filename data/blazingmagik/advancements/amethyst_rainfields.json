@@ -1,0 +1,28 @@
+{
+    "parent": "blazingmagik:root",
+    "display": {
+        "icon": {
+            "item": "amethyst_cluster"
+        },
+        "title": "Amethyst Rainfields",
+        "description": "Amethyst Rainfields is pretty much your normal plains/forest biome. Why not?",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {
+        "function": "blazingmagik:amethyst_rainfields"
+    },
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:amethyst_rainfields"
+                }
+            }
+        }
+    },
+    "requirements": []
+}

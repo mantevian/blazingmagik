@@ -1,0 +1,28 @@
+{
+    "parent": "blazingmagik:liquated",
+    "display": {
+        "icon": {
+            "item": "glowstone"
+        },
+        "title": "NUCLEAR-STAR",
+        "description": "NUCLEAR-STAR is hot and deadly. Might not want to spend too much time here!",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {
+        "function": "blazingmagik:nuclear_star"
+    },
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:nuclear_star"
+                }
+            }
+        }
+    },
+    "requirements": []
+}

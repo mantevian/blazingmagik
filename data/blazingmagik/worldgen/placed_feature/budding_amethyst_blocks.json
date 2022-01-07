@@ -1,0 +1,30 @@
+{
+    "feature": {
+        "type": "replace_single_block",
+        "config": {
+            "targets": [
+                {
+                    "target": {
+                        "predicate_type": "block_match",
+                        "block": "amethyst_block"
+                    },
+                    "state": {
+                        "Name": "budding_amethyst"
+                    }
+                }
+            ]
+        }
+    },
+    "placement": [
+        {
+            "type": "count_on_every_layer",
+            "count": 16
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

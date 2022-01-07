@@ -1,0 +1,28 @@
+{
+    "parent": "blazingmagik:amethyst_rainfields",
+    "display": {
+        "icon": {
+            "item": "ender_pearl"
+        },
+        "title": "amorphous",
+        "description": "Even if you weren't reading these, you'd immediately know what amorphous is. It's got shapes, oh- *gets launched into the stratosphere*",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {
+        "function": "blazingmagik:amorphous"
+    },
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:amorphous"
+                }
+            }
+        }
+    },
+    "requirements": []
+}

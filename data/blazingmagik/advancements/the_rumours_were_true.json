@@ -1,0 +1,41 @@
+{
+    "parent": "blazingmagik:genie",
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "The Rumours Were True",
+        "description": "Discover the ancient life buried underground",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "look_at_villager": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "predicate": {
+                            "player": {
+                                "looking_at": {
+                                    "type": "minecraft:villager"
+                                }
+                            }
+                        },
+                        "entity": "this"
+                    }
+                ]
+            }
+        },
+        "loot_villager_cage_chest": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "blazingmagik:villager_cage"
+            }
+        }
+    },
+    "requirements": []
+}

@@ -1,0 +1,10 @@
+{
+    "parent": "blazingmagik:nuclear_star",
+    "rewards": {},
+    "criteria": {
+        "impossible": {
+            "trigger": "tick"
+        }
+    },
+    "requirements": []
+}

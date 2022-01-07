@@ -1,0 +1,77 @@
+{
+    "type": "block_column",
+    "config": {
+        "direction": "down",
+        "allowed_placement": {
+            "blocks": [
+                "minecraft:air"
+            ],
+            "type": "minecraft:matching_blocks"
+        },
+        "layers": [
+            {
+                "height": 1,
+                "provider": {
+                    "type": "weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "shroomlight"
+                            },
+                            "weight": 1
+                        },
+                        {
+                            "data": {
+                                "Name": "acacia_leaves"
+                            },
+                            "weight": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "pink_stained_glass"
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "uniform",
+                    "value": {
+                        "min_inclusive": 1,
+                        "max_inclusive": 6
+                    }
+                },
+                "provider": {
+                    "type": "weighted_state_provider",
+                    "entries": [
+                        {
+                            "data": {
+                                "Name": "crimson_fence",
+                                "Properties": {
+                                    "east": "false",
+                                    "north": "false",
+                                    "west": "false",
+                                    "south": "false",
+                                    "waterlogged": "false"
+                                }
+                            },
+                            "weight": 5
+                        },
+                        {
+                            "data": {
+                                "Name": "air"
+                            },
+                            "weight": 1
+                        }
+                    ]
+                }
+            }
+        ],
+        "prioritize_tip": false
+    }
+}

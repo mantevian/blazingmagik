@@ -1,0 +1,19 @@
+{
+    "feature": "blazingmagik:crystallized_column_patch",
+    "placement": [
+        {
+            "type": "count_on_every_layer",
+            "count": 4
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "heightmap": "OCEAN_FLOOR_WG",
+            "type": "minecraft:heightmap"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

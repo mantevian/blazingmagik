@@ -1,0 +1,131 @@
+{
+    "config": {
+        "tries": 12,
+        "xz_spread": 2,
+        "y_spread": 4,
+        "feature": {
+            "feature": {
+                "type": "block_column",
+                "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                        "blocks": [
+                            "minecraft:air"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    "layers": [
+                        {
+                            "height": {
+                                "type": "biased_to_bottom",
+                                "value": {
+                                    "max_inclusive": 6,
+                                    "min_inclusive": 2
+                                }
+                            },
+                            "provider": {
+                                "type": "weighted_state_provider",
+                                "entries": [
+                                    {
+                                        "data": {
+                                            "Name": "amethyst_block"
+                                        },
+                                        "weight": 10
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "budding_amethyst"
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "air"
+                                        },
+                                        "weight": 4
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "height": 1,
+                            "provider": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "amethyst_block"
+                                }
+                            }
+                        },
+                        {
+                            "height": 1,
+                            "provider": {
+                                "type": "minecraft:weighted_state_provider",
+                                "entries": [
+                                    {
+                                        "data": {
+                                            "Name": "large_amethyst_bud",
+                                            "Properties": {
+                                                "waterlogged": "false",
+                                                "facing": "up"
+                                            }
+                                        },
+                                        "weight": 1
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "medium_amethyst_bud",
+                                            "Properties": {
+                                                "waterlogged": "false",
+                                                "facing": "up"
+                                            }
+                                        },
+                                        "weight": 2
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "small_amethyst_bud",
+                                            "Properties": {
+                                                "waterlogged": "false",
+                                                "facing": "up"
+                                            }
+                                        },
+                                        "weight": 3
+                                    },
+                                    {
+                                        "data": {
+                                            "Name": "air"
+                                        },
+                                        "weight": 2
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "prioritize_tip": false
+                }
+            },
+            "placement": [
+                {
+                    "predicate": {
+                        "predicates": [
+                            {
+                                "type": "minecraft:replaceable"
+                            },
+                            {
+                                "offset": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "type": "solid"
+                            }
+                        ],
+                        "type": "minecraft:all_of"
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                }
+            ]
+        }
+    },
+    "type": "minecraft:random_patch"
+}

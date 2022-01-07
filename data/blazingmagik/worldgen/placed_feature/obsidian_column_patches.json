@@ -1,0 +1,41 @@
+{
+    "feature": "blazingmagik:obsidian_column_patch",
+    "placement": [
+        {
+            "type": "count_on_every_layer",
+            "count": 12
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "direction_of_search": "up",
+            "target_condition": {
+                "type": "minecraft:solid"
+            },
+            "allowed_search_condition": {
+                "blocks": [
+                    "minecraft:air"
+                ],
+                "type": "minecraft:matching_blocks"
+            },
+            "max_steps": 32,
+            "type": "minecraft:environment_scan"
+        },
+        {
+            "height": {
+                "min_inclusive": {
+                    "above_bottom": 16
+                },
+                "max_inclusive": {
+                    "above_bottom": 96
+                },
+                "type": "minecraft:uniform"
+            },
+            "type": "minecraft:height_range"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

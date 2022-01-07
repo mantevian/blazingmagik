@@ -1,0 +1,45 @@
+{
+    "config": {
+        "decorators": [],
+        "ignore_vines": true,
+        "force_dirt": false,
+        "dirt_provider": {
+            "state": {
+                "Name": "minecraft:gray_glazed_terracotta"
+            },
+            "type": "minecraft:simple_state_provider"
+        },
+        "minimum_size": {
+            "limit": 1,
+            "lower_size": 0,
+            "upper_size": 2,
+            "type": "minecraft:two_layers_feature_size"
+        },
+        "trunk_provider": {
+            "state": {
+                "Name": "minecraft:air"
+            },
+            "type": "minecraft:simple_state_provider"
+        },
+        "trunk_placer": {
+            "base_height": 6,
+            "height_rand_a": 24,
+            "height_rand_b": 24,
+            "type": "minecraft:straight_trunk_placer"
+        },
+        "foliage_provider": {
+            "state": {
+                "Name": "minecraft:red_concrete"
+            },
+            "type": "minecraft:simple_state_provider"
+        },
+        "foliage_placer": {
+            "foliage_height": 2,
+            "radius": 2,
+            "leaf_placement_attempts": 256,
+            "offset": 0,
+            "type": "minecraft:random_spread_foliage_placer"
+        }
+    },
+    "type": "minecraft:tree"
+}

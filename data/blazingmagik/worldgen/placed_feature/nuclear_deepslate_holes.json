@@ -1,0 +1,182 @@
+{
+    "feature": "blazingmagik:deepslate_air_column",
+    "placement": [
+        {
+            "type": "noise_based_count",
+            "noise_factor": 20,
+            "noise_to_count_ratio": 240,
+            "noise_offset": 0.5
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "height": {
+                "min_inclusive": {
+                    "above_bottom": 8
+                },
+                "max_inclusive": {
+                    "above_bottom": 64
+                },
+                "type": "minecraft:uniform"
+            },
+            "type": "minecraft:height_range"
+        },
+        {
+            "direction_of_search": "down",
+            "target_condition": {
+                "type": "minecraft:solid"
+            },
+            "allowed_search_condition": {
+                "blocks": [
+                    "minecraft:air"
+                ],
+                "type": "minecraft:matching_blocks"
+            },
+            "max_steps": 32,
+            "type": "minecraft:environment_scan"
+        },
+        {
+            "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                    {
+                        "offset": [
+                            0,
+                            1,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:air"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            -1,
+                            0,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            0,
+                            0,
+                            -1
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            0,
+                            0,
+                            1
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            1,
+                            0,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            -1,
+                            -1,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            0,
+                            -1,
+                            -1
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            0,
+                            -1,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            0,
+                            -1,
+                            1
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    },
+                    {
+                        "offset": [
+                            1,
+                            -1,
+                            0
+                        ],
+                        "blocks": [
+                            "minecraft:deepslate_bricks",
+                            "minecraft:cracked_deepslate_bricks"
+                        ],
+                        "type": "minecraft:matching_blocks"
+                    }
+                ]
+            },
+            "type": "minecraft:block_predicate_filter"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

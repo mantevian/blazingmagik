@@ -1,0 +1,71 @@
+{
+    "feature": {
+        "type": "simple_block",
+        "config": {
+            "to_place": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                        "data": {
+                            "Name": "large_amethyst_bud",
+                            "Properties": {
+                                "waterlogged": "false",
+                                "facing": "up"
+                            }
+                        },
+                        "weight": 3
+                    },
+                    {
+                        "data": {
+                            "Name": "medium_amethyst_bud",
+                            "Properties": {
+                                "waterlogged": "false",
+                                "facing": "up"
+                            }
+                        },
+                        "weight": 8
+                    },
+                    {
+                        "data": {
+                            "Name": "small_amethyst_bud",
+                            "Properties": {
+                                "waterlogged": "false",
+                                "facing": "up"
+                            }
+                        },
+                        "weight": 16
+                    }
+                ]
+            }
+        }
+    },
+    "placement": [
+        {
+            "type": "count_on_every_layer",
+            "count": 96
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "block_predicate_filter",
+            "predicate": {
+                "blocks": [
+                    "minecraft:amethyst_block"
+                ],
+                "type": "minecraft:matching_blocks"
+            }
+        },
+        {
+            "max_water_depth": 0,
+            "type": "minecraft:surface_water_depth_filter"
+        },
+        {
+            "heightmap": "OCEAN_FLOOR",
+            "type": "minecraft:heightmap"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

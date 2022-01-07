@@ -1,0 +1,74 @@
+{
+    "feature": {
+        "config": {
+            "features": [
+                {
+                    "feature": {
+                        "feature": "blazingmagik:floating_cube_2",
+                        "placement": []
+                    },
+                    "chance": 0.2
+                },
+                {
+                    "feature": {
+                        "feature": "blazingmagik:floating_cube_3",
+                        "placement": []
+                    },
+                    "chance": 0.2
+                },
+                {
+                    "feature": {
+                        "feature": "blazingmagik:floating_shape_dark_oak",
+                        "placement": []
+                    },
+                    "chance": 0.2
+                },
+                {
+                    "feature": {
+                        "feature": "blazingmagik:floating_shape_fancy",
+                        "placement": []
+                    },
+                    "chance": 0.2
+                },
+                {
+                    "feature": {
+                        "feature": "blazingmagik:floating_shape_jungle",
+                        "placement": []
+                    },
+                    "chance": 0.2
+                }
+            ],
+            "default": {
+                "feature": "blazingmagik:floating_cube_3",
+                "placement": []
+            }
+        },
+        "type": "minecraft:random_selector"
+    },
+    "placement": [
+        {
+            "count": {
+                "type": "uniform",
+                "value": {
+                    "min_inclusive": 0,
+                    "max_inclusive": 1
+                }
+            },
+            "type": "minecraft:count"
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "max_water_depth": 16,
+            "type": "minecraft:surface_water_depth_filter"
+        },
+        {
+            "heightmap": "OCEAN_FLOOR",
+            "type": "minecraft:heightmap"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

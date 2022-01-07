@@ -1,0 +1,20 @@
+{
+    "config": {
+        "fossil_processors": "blazingmagik:nuclear_star",
+        "overlay_processors": "blazingmagik:nuclear_star",
+        "max_empty_corners_allowed": 7,
+        "fossil_structures": [
+            "blazingmagik:nuclear_star_copper",
+            "blazingmagik:nuclear_star_gold",
+            "blazingmagik:nuclear_star_honey",
+            "blazingmagik:nuclear_star_slime"
+        ],
+        "overlay_structures": [
+            "blazingmagik:empty",
+            "blazingmagik:empty",
+            "blazingmagik:empty",
+            "blazingmagik:empty"
+        ]
+    },
+    "type": "minecraft:fossil"
+}

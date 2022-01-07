@@ -1,0 +1,28 @@
+{
+    "parent": "blazingmagik:amorphous",
+    "display": {
+        "icon": {
+            "item": "packed_ice"
+        },
+        "title": "Artificial Snow Land",
+        "description": "Step on the snow and feel how many pain this land and its past inhabitants had been through...",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {
+        "function": "blazingmagik:artificial_snow_land"
+    },
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:artificial_snow_land"
+                }
+            }
+        }
+    },
+    "requirements": []
+}

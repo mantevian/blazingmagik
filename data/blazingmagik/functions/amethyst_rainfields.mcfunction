@@ -1,0 +1,1 @@
+scoreboard players set @s mantevian.blazingmagik.amethyst_rainfields 20

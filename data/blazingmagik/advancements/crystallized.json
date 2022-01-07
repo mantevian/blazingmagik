@@ -1,0 +1,28 @@
+{
+    "parent": "blazingmagik:artificial_snow_land",
+    "display": {
+        "icon": {
+            "item": "crying_obsidian"
+        },
+        "title": "crystallized",
+        "description": "Look at these green shiny things (or purple if you're underground)! That's the crystallized biome.",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "rewards": {
+        "function": "blazingmagik:crystallized"
+    },
+    "criteria": {
+        "biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "biome": "blazingmagik:crystallized"
+                }
+            }
+        }
+    },
+    "requirements": []
+}
