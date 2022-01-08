@@ -98,13 +98,13 @@
         "monster": [
             {
                 "type": "minecraft:spider",
-                "weight": 100,
+                "weight": 40,
                 "minCount": 4,
                 "maxCount": 4
             },
             {
                 "type": "minecraft:zombie",
-                "weight": 95,
+                "weight": 40,
                 "minCount": 4,
                 "maxCount": 4
             },
@@ -116,31 +116,37 @@
             },
             {
                 "type": "minecraft:skeleton",
-                "weight": 100,
+                "weight": 40,
                 "minCount": 4,
                 "maxCount": 4
             },
             {
                 "type": "minecraft:creeper",
-                "weight": 100,
+                "weight": 40,
                 "minCount": 4,
                 "maxCount": 4
             },
             {
                 "type": "minecraft:slime",
-                "weight": 100,
+                "weight": 60,
                 "minCount": 4,
                 "maxCount": 4
             },
             {
                 "type": "minecraft:enderman",
-                "weight": 10,
+                "weight": 5,
                 "minCount": 1,
                 "maxCount": 4
             },
             {
                 "type": "minecraft:witch",
                 "weight": 5,
+                "minCount": 1,
+                "maxCount": 1
+            },
+            {
+                "type": "minecraft:drowned",
+                "weight": 90,
                 "minCount": 1,
                 "maxCount": 1
             }
