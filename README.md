@@ -7,7 +7,7 @@ This dimension was made for the Dimensional Competition 3 hosted in the Dimensio
 ### Amethyst Rainfields
 An amethyst themed biome with tall fancy trees that have "raindrops" hanging from them. The surface is covered in pink and magenta concrete and amethysts. Most common animals spawn here.
 
-## amorphous
+### amorphous
 An unusual looking biome with mostly b&w concrete surface and with floating colored shapes in the air. This biome has a unique property: stepping on gray glazed terracotta launches players up with levitation. Animals don't spawn here, instead, you can meet ghasts and wither skeletons here.
 
 ### Artificial Snow Land
